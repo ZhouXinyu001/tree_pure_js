@@ -1,23 +1,3 @@
-// function initVars(){
-//   pi = Math.PI;
-//   canvas = document.querySelector("#canvas");
-//   ctx = canvas.getContext("2d");
-//   canvas.width = document.body.clientWidth;
-//   canvas.height = document.body.clientHeight;
-//   cx = canvas.width / 2;
-//   cy = canvas.height / 2;
-//   cameraX = 0;
-//   cameraY = -25;
-//   cameraZ = -150;
-//   pitch = 0;
-//   yaw = 0;
-//   scale = 600;
-//   trees = [];
-//   treeSize = 25;
-//   seed = 1;
-//   frames = 0;
-// }
-
 var pi = Math.PI;
 varcanvas = document.querySelector("#canvas");
 var ctx = canvas.getContext("2d");
@@ -240,8 +220,6 @@ function draw() {
 function frame() {
   requestAnimationFrame(frame);
   frames++;
-  console.log(frames);
-  // initVars();
   doLogic();
   draw();
 }
